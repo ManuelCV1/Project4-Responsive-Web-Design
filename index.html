@@ -1,13 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de documentación técnica</title>
 </head>
 <body>
-    
+    <main id="main-doc">
+
+        <nav id="navbar">
+
+            <header>
+               <h1 id="documentación"> JS Documentación</h1>
+            </header>
+ <ul id="lista">
+     <li id="indice"><a class="nav-link" href="#¿Qué_es_JavaScript?">¿Qué es JavaScript?</a></li>
+     <li id="indice"><a class="nav-link" href="#JavaScript_y_Java" >JavaScript y Java</a></li>
+     <li id="indice"><a class="nav-link" href="#Cómo_empezar_con_JavaScript">Cómo empezar con JavaScript</a></li>
+     <li id="indice"><a class="nav-link" href="#Gramática_(Conceptos_básicos)">Gramática (Conceptos básicos)</a></li>
+     <li id="indice"><a class="nav-link" href="#Comentarios" >Comentarios</a></li>
+     <li id="indice"><a class="nav-link" href="#Declaraciones">Declaraciones</a></li> 
+ </ul>
+        </nav>
+
+<div class="section-div">    
+    <section class="main-section" id="¿Qué_es_JavaScript?">
+
+        <header id="">
+            <h1>¿Qué es JavaScript?</h1>
+        </header>
+
+<p>JavaScript es un lenguaje de programación multiplataforma orientado a objetos que se utiliza para hacer que las páginas web sean interactivas (p. ej., Que tienen animaciones complejas, botones en los que se puede hacer clic, menús emergentes, etc.). También hay versiones de JavaScript de lado del servidor más avanzadas, como Node.js, que te permiten agregar más funcionalidad a un sitio web que simplemente descargar archivos (como la colaboración en tiempo real entre varias computadoras). Dentro de un entorno (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de su entorno para proporcionar control programático sobre ellos.</p>
+
+<p>JavaScript contiene una biblioteca estándar de objetos, como <code>Array</code>, <code>Date</code> y <code>Math</code>, y un conjunto básico de elementos del lenguaje como operadores, estructuras de control y declaraciones. El núcleo de JavaScript se puede extender para una variedad de propósitos completándolo con objetos adicionales; por ejemplo:</p>
+
+<ul>
+    <li>JavaScript de lado del cliente extiende el núcleo del lenguaje al proporcionar objetos para controlar un navegador y su Modelo de objetos de documento (DOM por Document Object Model). Por ejemplo, las extensiones de lado del cliente permiten que una aplicación coloque elementos en un formulario HTML y responda a eventos del usuario, como clics del mouse, formularios para ingreso de datos y navegación de páginas. </li>
+
+    <li> JavaScript de lado del servidor amplía el núcleo del lenguaje al proporcionar objetos relevantes para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones de lado del servidor permiten que una aplicación se comunique con una base de datos, brinde continuidad de información de una invocación a otra de la aplicación o realice manipulación de archivos en un servidor.</li>
+</ul>
+
+<p>
+    Esto significa que en el navegador, JavaScript puede cambiar la apariencia de la página web (DOM). Y, del mismo modo, el JavaScript de Node.js en el servidor puede responder a solicitudes personalizadas desde el código escrito en el navegador.
+</p>
+
+    </section>
+
+    <section class="main-section" id="JavaScript_y_Java">
+        
+        <header id="">
+            <h1>JavaScript y Java</h1>
+        </header>
+        
+        <p>
+            JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en otros. El lenguaje JavaScript se parece a Java, pero no tiene el tipado estático ni la fuerte verificación de tipos de Java. JavaScript sigue la mayoría de la sintaxis de las expresiones de Java, convenciones de nomenclatura y construcciones de control de flujo básicas, razón por la cual se cambió el nombre de LiveScript a JavaScript.
+        </p>
+
+        <p>
+            A diferencia del sistema de clases en tiempo de compilación de Java creado por declaraciones, JavaScript admite un sistema de tiempo de ejecución basado en una pequeña cantidad de tipos de datos que representan valores numéricos, booleanos y de cadena. JavaScript tiene un modelo de objetos basado en prototipos en lugar del modelo de objetos basado en clases más común. El modelo basado en prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar en objetos individuales. JavaScript también admite funciones sin requisitos declarativos especiales. Las funciones pueden ser propiedades de objetos, ejecutándose como métodos débilmente tipados.
+        </p>
+    </section>
+
+    <section class="main-section" id="Cómo_empezar_con_JavaScript">
+        
+        <header id="">
+            <h1>Cómo empezar con JavaScript</h1>
+        </header>
+        
+        <p>
+            Comenzar con JavaScript es fácil: todo lo que necesitas es un navegador web moderno. Esta guía incluye algunas funciones de JavaScript que solo están disponibles actualmente en las últimas versiones de Firefox, por lo que se recomienda utilizar la versión más reciente de Firefox.</p>
+
+<p>La herramienta Consola web integrada en Firefox es útil para experimentar con JavaScript; Puedes usarla en dos modos: modo de entrada unilínea y modo de entrada multilínea.
+        </p>
+
+    </section>
+
+    <section class="main-section" id="Gramática_(Conceptos_básicos)">
+        
+        <header id="">
+            <h1>Gramática (Conceptos básicos)</h1>
+        </header>
+
+        <p>
+            JavaScript está influenciado sobre todo por la sintaxis de Java, C y C++, pero también ha sido influenciado por Awk, Perl y Python.
+        </p>
+
+        <p>
+            JavaScript distingue entre mayúsculas y minúsculas (es case-sensitive) y utiliza el conjunto de caracteres Unicode. Por ejemplo, la palabra «Früh» (que significa "temprano" en Alemán) se podría usar como el nombre de una variable.
+        </p>
+
+        <p><code>let Früh = "foobar"</code></p>
+
+        <p>Pero, la variable früh no es la misma que Früh porque JavaScript distingue entre mayúsculas y minúsculas.</p>
+        
+    </section>
+
+    <section class="main-section" id="Comentarios">
+        
+        <header id="">
+            <h1>Comentarios</h1>
+        </header>
+        
+        <p>
+            La sintaxis de los comentarios es la misma que en C++ y en muchos otros lenguajes:
+        </p>
+
+        <p><code>// un comentario de una línea</code>
+            <br>
+            <code>/* este es un comentario<br></code>
+            <code> * más largo, de varias líneas<br></code>
+            <code>*/</code>
+            <br>
+            <code>/* Sin embargo, no puedes /* anidar comentarios */ SyntaxError */</code></p>
+
+            <p>Los comentarios se comportan como espacios en blanco y se descartan durante la ejecución del script.</p>
+
+    </section>
+
+    <section class="main-section" id="Declaraciones">
+        
+        <header id="">
+            <h1> Declaraciones</h1>
+        </header>
+
+        <p>JavaScript tiene tres tipos de declaraciones de variables.</p>
+
+        <ul>
+            <li><code>var</code><br>Declara una variable, opcionalmente la inicia a un valor.</li>
+            <li><code>let</code><br>Declara una variable local con ámbito de bloque, opcionalmente la inicia a un valor.</li>
+            <li><code>const</code><br>Declara un nombre de constante de solo lectura y ámbito de bloque.</li>
+        </ul>
+
+
+        
+    </section>
+
+</div>    
+
+    </main>
 
 
 

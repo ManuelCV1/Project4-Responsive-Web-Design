@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(145, 72, 72);
+    font-size: 1.1rem;
+    margin-left:0 ;
+}
+
+#navbar{
+    position:fixed;
+    width: 30%;
+    border:solid;
+    border-left: none;
+
+}
+
+h1#documentación{
+padding-left: 10px;
+}
+
+ul#lista{
+margin-bottom: 10px;
+list-style: none;
+}
+
+li#indice{
+    border-top: solid 1px;
+
+    
+}
+
+a.nav-link{
+    text-decoration: none;
+    color:inherit;
+}
+
+hr{
+    width: 114.5%;
+    position: relative;
+    right: 40px;
+
+}
+
+.section-div{
+ margin-left: 32%;
+}
+
